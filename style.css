@@ -206,3 +206,107 @@ header {
   padding: 0.5rem 1.2rem;
   font-size: 0.9rem;
 }
+
+/* ===== LIST STYLES ===== */
+.list-section {
+  background-color: #2A004E;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.list-section h2, 
+.list-section h3 {
+  color: #F14A00;
+  margin-bottom: 1rem;
+}
+
+.custom-list {
+  margin: 1rem 0 2rem 2rem;
+  line-height: 1.8;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.custom-list li::before {
+  content: "•";
+  color: #C62300;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.custom-list.ordered {
+  counter-reset: item;
+  list-style: none;
+}
+
+.custom-list.ordered li::before {
+  counter-increment: item;
+  content: counter(item) ". ";
+  color: #F14A00;
+  font-weight: bold;
+  left: -1.5rem;
+}
+
+/* ===== FORM STYLES ===== */
+.input-section {
+  background-color: #500073;
+  padding: 4rem 2rem;
+  text-align: left;
+  color: #fff;
+}
+
+.example-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #F14A00;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #C62300;
+  border-radius: 8px;
+  background-color: #2A004E;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #F14A00;
+  box-shadow: 0 0 8px rgba(241, 74, 0, 0.5);
+}
+
+button.btn {
+  background-color: #F14A00;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #C62300;
+}
